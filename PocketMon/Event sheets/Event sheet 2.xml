@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 2</name>
+    <events>
+        <event-group description="" sid="483848583822948" title="Game_Controller">
+            <sub-events>
+                <event-block sid="818634292843954">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="948397471263376" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="123798208546526" type="Cam">
+                            <param id="0" name="X">lerp (Cam.X, Player.X, 0.1)</param>
+                            <param id="1" name="Y">lerp (Cam.Y, Player.Y, 0.1)</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="293935763816431" type="Cam">
+                            <param id="0" name="Pin to">Player</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="157081927318071">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="207514675860628" type="System" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="220047047232284" type="pocketmon">
+                    <param id="0" name="X">lerp (pocketmon.X, Player.X, 0.1)</param>
+                    <param id="1" name="Y">lerp (pocketmon.Y, Player.Y, 0.1)</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

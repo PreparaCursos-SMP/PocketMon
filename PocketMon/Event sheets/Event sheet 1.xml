@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <event-block sid="393191882033159">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="338471662451081" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">botao_start</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="682269510580611" type="System">
+                    <param id="0" name="Layout">Gameplay</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
