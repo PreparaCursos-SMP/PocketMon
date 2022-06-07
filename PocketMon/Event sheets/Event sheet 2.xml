@@ -24,14 +24,223 @@
         </event-group>
         <event-block sid="157081927318071">
             <conditions>
-                <condition id="-1" name="Every tick" sid="207514675860628" type="System" />
+                <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="207514675860628" type="pocketmon">
+                    <param id="0" name="Object">Player</param>
+                </condition>
             </conditions>
             <actions>
-                <action id="-3" name="Set position" sid="220047047232284" type="pocketmon">
-                    <param id="0" name="X">lerp (pocketmon.X, Player.X, 0.1)</param>
-                    <param id="1" name="Y">lerp (pocketmon.Y, Player.Y, 0.1)</param>
+                <action id="-12" name="Set group active" sid="176501652875580" type="System">
+                    <param id="0" name="Group name">&quot;Finding&quot;</param>
+                    <param id="1" name="State">1</param>
                 </action>
             </actions>
         </event-block>
+        <event-block sid="943997405222007">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="605787244559935" type="Keyboard">
+                    <param id="0" name="Key">39</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="844009863821220" type="Player">
+                    <param id="0" name="Animation">&quot;WalkRight&quot;</param>
+                    <param id="1" name="From">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="491671127488548">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="787491785422723" type="Keyboard">
+                    <param id="0" name="Key">40</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="401089677734659" type="Player">
+                    <param id="0" name="Animation">&quot;WalkDown&quot;</param>
+                    <param id="1" name="From">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="982287679596180">
+            <conditions>
+                <condition id="7" name="On any key released" sid="993460594260402" type="Keyboard" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="624424198207378" type="Player">
+                    <param id="0" name="Animation">&quot;idleright&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="927563181896346">
+            <conditions>
+                <condition id="3" name="On key released" sid="234315799459870" type="Keyboard">
+                    <param id="0" name="Key">40</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="163285467819434" type="Player">
+                    <param id="0" name="Animation">&quot;idle&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="660057839101230">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="438231772295742" type="Keyboard">
+                    <param id="0" name="Key">37</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="508516214659826" type="Player">
+                    <param id="0" name="Animation">&quot;WalkLeft&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="765885111465589">
+            <conditions>
+                <condition id="3" name="On key released" sid="350818617744935" type="Keyboard">
+                    <param id="0" name="Key">37</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="550900594003536" type="Player">
+                    <param id="0" name="Animation">&quot;idleleft&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="989618677409584">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="491232618345320" type="Keyboard">
+                    <param id="0" name="Key">38</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="836070199012988" type="Player">
+                    <param id="0" name="Animation">&quot;WalkUp&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="883025583359869">
+            <conditions>
+                <condition id="3" name="On key released" sid="291369460825750" type="Keyboard">
+                    <param id="0" name="Key">38</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="586432096653648" type="Player">
+                    <param id="0" name="Animation">&quot;idleup&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="362394674566216">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="344747361837862" type="Keyboard">
+                    <param id="0" name="Key">39</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="237849540385339" type="pocketmon">
+                    <param id="0" name="Animation">&quot;WalkRight&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="673447879450845">
+            <conditions>
+                <condition id="3" name="On key released" sid="784221895667507" type="Keyboard">
+                    <param id="0" name="Key">39</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="725201395853517" type="pocketmon">
+                    <param id="0" name="Animation">&quot;IdleRight&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="495113480293070">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="642133986604961" type="Keyboard">
+                    <param id="0" name="Key">37</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="941988262485648" type="pocketmon">
+                    <param id="0" name="Animation">&quot;WalkLeft&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="853843094751617">
+            <conditions>
+                <condition id="3" name="On key released" sid="407850315800156" type="Keyboard">
+                    <param id="0" name="Key">37</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="868306643341673" type="pocketmon">
+                    <param id="0" name="Animation">&quot;IdleLeft&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="759858611464849">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="478363052314474" type="Keyboard">
+                    <param id="0" name="Key">38</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="720766153381753" type="pocketmon">
+                    <param id="0" name="Animation">&quot;WalkUp&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="928059406686284">
+            <conditions>
+                <condition id="3" name="On key released" sid="803721857191959" type="Keyboard">
+                    <param id="0" name="Key">38</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="450201361101830" type="pocketmon">
+                    <param id="0" name="Animation">&quot;IdleUp&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="835456478518042">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="883765360047350" type="Keyboard">
+                    <param id="0" name="Key">40</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="469980859656557" type="pocketmon">
+                    <param id="0" name="Animation">&quot;WalkDown&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="475981037369369">
+            <conditions>
+                <condition id="3" name="On key released" sid="181280541709537" type="Keyboard">
+                    <param id="0" name="Key">40</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="533982620394728" type="pocketmon">
+                    <param id="0" name="Animation">&quot;idle&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="251389349367153" title="Finding" />
     </events>
 </c2eventsheet>

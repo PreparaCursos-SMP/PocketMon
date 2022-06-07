@@ -10,6 +10,7 @@
     <unique-id>ie2jsy2c5z40</unique-id>
     <saved-with-version>28000</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
@@ -18,8 +19,9 @@
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="LOS" version="1">Line Of Sight</behavior>
+        <behavior author="Scirra" id="Pathfinding" version="1">Pathfinding</behavior>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
-        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="custom" version="1">Custom Movement</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
     </used-behaviors>
@@ -82,8 +84,41 @@
                     </behavior-type>
                 </behaviors>
                 <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="334963913794477" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <animation framecount="1" loop="1" name="idle" pingpong="0" repeatcount="1" repeatto="0" sid="443497771284801" speed="5">
+                        <frame duration="1" hotspotX="0.533333" hotspotY="0.701754" original-source="C:\Users\aluno\Desktop\gZ3c5 (1).png" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="idleup" pingpong="0" repeatcount="1" repeatto="0" sid="231926951929864" speed="5">
+                        <frame duration="1" hotspotX="0.534483" hotspotY="0.62963" original-source="C:\Users\aluno\Desktop\gZ3c5 (1).png" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="idleright" pingpong="0" repeatcount="1" repeatto="0" sid="791307875379346" speed="5">
+                        <frame duration="1" hotspotX="0.552632" hotspotY="0.679245" original-source="C:\Users\aluno\Desktop\gZ3c5 (1).png" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="idleleft" pingpong="0" repeatcount="1" repeatto="0" sid="447961195935426" speed="5">
+                        <frame duration="1" hotspotX="0.581395" hotspotY="0.689655" original-source="C:\Users\aluno\Desktop\gZ3c5 (1).png" />
+                    </animation>
+                    <animation framecount="4" loop="1" name="WalkRight" pingpong="0" repeatcount="1" repeatto="0" sid="334963913794477" speed="5">
+                        <frame duration="1" hotspotX="0.542373" hotspotY="0.694915" original-source="C:\Users\aluno\Desktop\gZ3c5 (1).png" />
+                        <frame duration="1" hotspotX="0.533333" hotspotY="0.694915" original-source="C:\Users\aluno\Desktop\gZ3c5 (1).png" />
+                        <frame duration="1" hotspotX="0.543478" hotspotY="0.7" original-source="C:\Users\aluno\Desktop\gZ3c5 (1).png" />
+                        <frame duration="1" hotspotX="0.533333" hotspotY="0.7" original-source="C:\Users\aluno\Desktop\gZ3c5 (1).png" />
+                    </animation>
+                    <animation framecount="4" loop="1" name="WalkLeft" pingpong="0" repeatcount="1" repeatto="0" sid="487612535333089" speed="5">
+                        <frame duration="1" hotspotX="0.537313" hotspotY="0.6875" original-source="C:\Users\aluno\Desktop\gZ3c5 (1).png" />
+                        <frame duration="1" hotspotX="0.531915" hotspotY="0.694915" original-source="C:\Users\aluno\Desktop\gZ3c5 (1).png" />
+                        <frame duration="1" hotspotX="0.552632" hotspotY="0.701754" original-source="C:\Users\aluno\Desktop\gZ3c5 (1).png" />
+                        <frame duration="1" hotspotX="0.535714" hotspotY="0.690909" original-source="C:\Users\aluno\Desktop\gZ3c5 (1).png" />
+                    </animation>
+                    <animation framecount="4" loop="1" name="WalkDown" pingpong="0" repeatcount="1" repeatto="0" sid="925929736145669" speed="5">
+                        <frame duration="1" hotspotX="0.540541" hotspotY="0.696429" original-source="C:\Users\aluno\Desktop\gZ3c5 (1).png" />
+                        <frame duration="1" hotspotX="0.534884" hotspotY="0.696429" original-source="C:\Users\aluno\Desktop\gZ3c5 (1).png" />
+                        <frame duration="1" hotspotX="0.541667" hotspotY="0.701754" original-source="C:\Users\aluno\Desktop\gZ3c5 (1).png" />
+                        <frame duration="1" hotspotX="0.545455" hotspotY="0.693548" original-source="C:\Users\aluno\Desktop\gZ3c5 (1).png" />
+                    </animation>
+                    <animation framecount="4" loop="1" name="WalkUp" pingpong="0" repeatcount="1" repeatto="0" sid="213827134327724" speed="5">
+                        <frame duration="1" hotspotX="0.54" hotspotY="0.694915" original-source="C:\Users\aluno\Desktop\gZ3c5 (1).png" />
+                        <frame duration="1" hotspotX="0.545455" hotspotY="0.698113" original-source="C:\Users\aluno\Desktop\gZ3c5 (1).png" />
+                        <frame duration="1" hotspotX="0.541667" hotspotY="0.692308" original-source="C:\Users\aluno\Desktop\gZ3c5 (1).png" />
+                        <frame duration="1" hotspotX="0.533333" hotspotY="0.694915" original-source="C:\Users\aluno\Desktop\gZ3c5 (1).png" />
                     </animation>
                 </animation-folder>
             </object-type>
@@ -93,13 +128,90 @@
                     <behavior-type name="CustomMovement" sid="302701418802878">
                         <behavior id="custom" />
                     </behavior-type>
-                    <behavior-type name="Platform" sid="431667636229158">
-                        <behavior id="Platform" />
+                    <behavior-type name="Pathfinding" sid="406605521984954">
+                        <behavior id="Pathfinding" />
+                    </behavior-type>
+                    <behavior-type name="LineOfSight" sid="924457025293144">
+                        <behavior id="LOS" />
                     </behavior-type>
                 </behaviors>
                 <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="633118007065589" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <animation framecount="5" loop="1" name="idle" pingpong="0" repeatcount="1" repeatto="0" sid="633118007065589" speed="5">
+                        <frame duration="1" hotspotX="0.48" hotspotY="0.676471" />
+                        <frame duration="1" hotspotX="0.47619" hotspotY="0.666667" />
+                        <frame duration="1" hotspotX="0.48" hotspotY="0.666667" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.666667" />
+                        <frame duration="1" hotspotX="0.478261" hotspotY="0.685714" />
+                    </animation>
+                    <animation framecount="1" loop="1" name="IdleRight" pingpong="0" repeatcount="1" repeatto="0" sid="667578777903641" speed="5">
+                        <frame duration="1" hotspotX="0.483871" hotspotY="0.678571" />
+                    </animation>
+                    <animation framecount="1" loop="1" name="IdleLeft" pingpong="0" repeatcount="1" repeatto="0" sid="784463530853523" speed="5">
+                        <frame duration="1" hotspotX="0.483871" hotspotY="0.678571">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="1" name="IdleUp" pingpong="0" repeatcount="1" repeatto="0" sid="140187953087077" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.677419" />
+                    </animation>
+                    <animation framecount="4" loop="1" name="WalkRight" pingpong="0" repeatcount="1" repeatto="0" sid="829769434154632" speed="5">
+                        <frame duration="1" hotspotX="0.483871" hotspotY="0.678571" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.666667" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.666667" />
+                        <frame duration="1" hotspotX="0.48" hotspotY="0.682927" />
+                    </animation>
+                    <animation framecount="4" loop="1" name="WalkLeft" pingpong="0" repeatcount="1" repeatto="0" sid="445913188090032" speed="5">
+                        <frame duration="1" hotspotX="0.483871" hotspotY="0.678571">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.666667">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.666667">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.48" hotspotY="0.682927">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="6" loop="1" name="WalkUp" pingpong="0" repeatcount="1" repeatto="0" sid="842095586357438" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.677419" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.678571" />
+                        <frame duration="1" hotspotX="0.478261" hotspotY="0.677419" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.678571" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.666667" />
+                        <frame duration="1" hotspotX="0.484848" hotspotY="0.678571" />
+                    </animation>
+                    <animation framecount="4" loop="1" name="WalkDown" pingpong="0" repeatcount="1" repeatto="0" sid="336336932725017" speed="5">
+                        <frame duration="1" hotspotX="0.484848" hotspotY="0.678571" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.666667" />
+                        <frame duration="1" hotspotX="0.481481" hotspotY="0.678571" />
+                        <frame duration="1" hotspotX="0.483871" hotspotY="0.666667" />
                     </animation>
                 </animation-folder>
             </object-type>
@@ -126,6 +238,9 @@
         <object-type name="Touch" sid="800972969162233">
             <plugin id="Touch" />
         </object-type>
+        <object-type name="Keyboard" sid="954944761040907">
+            <plugin id="Keyboard" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -143,6 +258,7 @@
                 <use-mouse-input>Yes</use-mouse-input>
             </properties>
         </global-instance>
+        <global-instance type="Keyboard" uid="9" />
     </global-instances>
     <sounds-folder />
     <music-folder />
