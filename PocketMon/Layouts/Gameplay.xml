@@ -145,6 +145,25 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+            </instances>
+            <effects />
+        </layer>
+        <layer name="Pet" sid="876596066656851">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
                 <instance type="pocketmon" uid="8">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -169,7 +188,7 @@
                                 <acceleration>1000</acceleration>
                                 <deceleration>2000</deceleration>
                                 <rotate-speed>135</rotate-speed>
-                                <rotate-object>Yes</rotate-object>
+                                <rotate-object>No</rotate-object>
                                 <diagonals>Enabled</diagonals>
                                 <initial-state>Enabled</initial-state>
                             </properties>
